@@ -42,6 +42,7 @@ jobs:
             -e "s/api\.roslegacy\.net/$D/g" \
             -e "s/login\.roslegacy\.net/$D/g" \
             -e "s/cdn\.mobile\.roslegacy\.net/$D/g"
+  -e "s/mirae-labs\.com/$D/g"
           echo "Still containing roslegacy.net (binary files not patched):"
           grep -rl "roslegacy.net" out || echo "none"
 
