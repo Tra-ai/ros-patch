@@ -1,0 +1,15 @@
+PlatformConfig.xml	8266	60e6f6e9b9556edc100922be078bfc60
+filelist_obb.txt	519	8c85f76d5e1c7c3d6cfdda5a3adfd013
+gles2_0_neox.xml	8116	66a05f160286773ecc0f63e2949bc014
+neox.xml	7876	079b30a6e9531baf72e15ddc87e1edcf
+ntunisdk.cfg	11	55e6d0f4522719c49aff83ddf9bcd340
+ntunisdk_config	11	55e6d0f4522719c49aff83ddf9bcd340
+obb_md5.txt	65	5616a9af93121913390dd65a4efad3af
+user_data.xml	76	4a644cf41f9ab14dcf99cbc549527414
+Documents/placeholder.txt	0	d41d8cd98f00b204e9800998ecf8427e
+res/md5_list	5551309	58e6e74638288ddf7788600cc7549211
+res/version	16	6046e46df2619f14225cbfbd1e33cdd6
+tuningfork/dev_tuningfork.descriptor	1223	c08bda3d60ba71f56ed0f9a0bf0552b0
+tuningfork/dev_tuningfork.proto	1259	713c03b886f4e1b7551335ba0e2d33db
+tuningfork/dev_tuningfork_fidelityparams_1.bin	60	da873647b343d507c7270fe28f73bba0
+tuningfork/tuningfork_settings.bin	234	d87074d036a3fd82448bdbe290f82a15

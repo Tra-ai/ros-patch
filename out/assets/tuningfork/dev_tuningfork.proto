@@ -1,0 +1,52 @@
+syntax = "proto2";
+
+package com.google.tuningfork;
+
+enum InstrumentKey {
+  CPU = 0;
+  GPU = 1;
+  SWAPPY_WAIT = 2;
+  SWAPPY_SWAP = 3;
+  CHOREOGRAPHER = 4;
+}
+
+enum SceneType {
+  // 0 is not a valid value
+  SCENE_DEFAULT = 0;
+  GAME_START = 1;
+  GAME_LOGGING = 2;
+  GAME_MAIN_UI = 3;
+  GAME_LOADING = 4;
+  GAME_PLAYING_ROUND0 = 5;
+  GAME_PLAYING_JUMP = 6;
+  GAME_PLAYING_ROUND1 = 7;
+  LOADING_LEVEL_HIG = 8;
+  LOADING_LEVEL_MED = 9;
+  SCENE_RESERVED1 = 10;
+  SCENE_RESERVED2 = 11;
+  SCENE_RESERVED3 = 12;
+};
+
+message Annotation {
+  optional SceneType scene = 1;
+}
+
+message FidelityParams {
+  optional int32 default_param = 1;
+  optional int32 view_distance = 2;
+  optional int32 effect_render_level = 3;
+  optional int32 shadow_level = 4;
+  optional float static_model_lod1_dist = 5;
+  optional float static_model_lod2_dist = 6;
+  optional float static_model_lod3_dist = 7;
+  optional int32 resolution_height = 8;
+  optional int32 resolution_width = 9;
+  optional int32 shader_lod = 10;
+  optional float tree_group_lod1_dist = 11;
+  optional float tree_group_lod2_dist = 12;
+  optional float tree_group_lod3_dist = 13;
+  optional int32 texture_skip_level = 14;
+  optional int32 var_int_1 = 15;
+  optional int32 var_int_2 = 16;
+  optional float var_float = 17;
+}

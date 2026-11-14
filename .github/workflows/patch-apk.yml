@@ -36,7 +36,7 @@ jobs:
       - name: Replace domains
         run: |
           D="${{ inputs.domain }}"
-          FILES=$(grep -rlE "roslegacy\.net" out/smali* out/res out/assets --include=*.smali --include=*.xml --include=*.json --include=*.txt || true)
+          FILES=$(grep -rlE "roslegacy\.net|mirae-labs\.com" out/smali* out/res out/assets --include=*.smali --include=*.xml --include=*.json --include=*.txt || true)
           echo "Files patched:"; echo "$FILES"
           [ -n "$FILES" ] && echo "$FILES" | xargs sed -i \
             -e "s/api\.roslegacy\.net/$D/g" \

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">Cancel</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">Login confirm</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">Confirm your login to %1$s</string>
+    <string name="netease_mpay_oversea__codescanner_err">Failed to open the camera, please restart the phone and try again!</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">Confirm login</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">Access error. Switch networks and try again!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">Access error. Please set the correct date on the system and try again!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">Service busy, please try again later</string>
+    <string name="netease_mpay_oversea__codescanner_ok">Confirm</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">Outdated QR Code</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">Scanning function cannot be used due to a lack of permission.</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">Settings</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">Please allow access to the camera.</string>
+    <string name="netease_mpay_oversea__codescanner_scan">Scan</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">Invalid QR Code, please scan correct QR Code</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">Request parameter error!</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">Scan again</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">Align QR Code within frame to scan</string>
+</resources>

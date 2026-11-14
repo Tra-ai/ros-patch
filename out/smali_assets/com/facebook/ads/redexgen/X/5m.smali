@@ -1,0 +1,30 @@
+.class public final Lcom/facebook/ads/redexgen/X/5m;
+.super Lcom/facebook/ads/redexgen/X/5l;
+.source ""
+
+
+# annotations
+.annotation build Landroid/support/annotation/RequiresApi;
+    value = 0x18
+.end annotation
+
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/facebook/ads/redexgen/X/5q;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "AccessibilityNodeInfoApi24Impl"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 9259
+    invoke-direct {p0}, Lcom/facebook/ads/redexgen/X/5l;-><init>()V
+
+    return-void
+.end method

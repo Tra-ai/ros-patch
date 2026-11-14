@@ -1,0 +1,65 @@
+.class Lcom/netease/mpay/oversea/ui/n$4;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/netease/mpay/oversea/ui/n;->l()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/netease/mpay/oversea/ui/n;
+
+
+# direct methods
+.method constructor <init>(Lcom/netease/mpay/oversea/ui/n;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/netease/mpay/oversea/ui/n$4;->a:Lcom/netease/mpay/oversea/ui/n;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    iget-object p1, p0, Lcom/netease/mpay/oversea/ui/n$4;->a:Lcom/netease/mpay/oversea/ui/n;
+
+    invoke-static {p1}, Lcom/netease/mpay/oversea/ui/n;->c(Lcom/netease/mpay/oversea/ui/n;)Lcom/netease/mpay/oversea/ui/n$a;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lcom/netease/mpay/oversea/ui/n$4;->a:Lcom/netease/mpay/oversea/ui/n;
+
+    invoke-static {p1}, Lcom/netease/mpay/oversea/ui/n;->c(Lcom/netease/mpay/oversea/ui/n;)Lcom/netease/mpay/oversea/ui/n$a;
+
+    move-result-object p1
+
+    const/4 p2, 0x0
+
+    invoke-interface {p1, p2}, Lcom/netease/mpay/oversea/ui/n$a;->a(Z)V
+
+    :cond_0
+    iget-object p1, p0, Lcom/netease/mpay/oversea/ui/n$4;->a:Lcom/netease/mpay/oversea/ui/n;
+
+    iget-object p1, p1, Lcom/netease/mpay/oversea/ui/n;->f:Landroid/app/Activity;
+
+    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+
+    return-void
+.end method

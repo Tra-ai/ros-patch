@@ -1,0 +1,121 @@
+.class public final Lcom/twitter/sdk/android/R$styleable;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/twitter/sdk/android/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "styleable"
+.end annotation
+
+
+# static fields
+.field public static final AspectRatioFrameLayout:[I
+
+.field public static final AspectRatioFrameLayout_tw__frame_layout_aspect_ratio:I = 0x0
+
+.field public static final AspectRatioFrameLayout_tw__frame_layout_dimension_to_adjust:I = 0x1
+
+.field public static final ToggleImageButton:[I
+
+.field public static final ToggleImageButton_contentDescriptionOff:I = 0x2
+
+.field public static final ToggleImageButton_contentDescriptionOn:I = 0x1
+
+.field public static final ToggleImageButton_state_toggled_on:I = 0x0
+
+.field public static final ToggleImageButton_toggleOnClick:I = 0x3
+
+.field public static final tw__TweetView:[I
+
+.field public static final tw__TweetView_tw__action_color:I = 0x3
+
+.field public static final tw__TweetView_tw__action_highlight_color:I = 0x4
+
+.field public static final tw__TweetView_tw__container_bg_color:I = 0x1
+
+.field public static final tw__TweetView_tw__primary_text_color:I = 0x2
+
+.field public static final tw__TweetView_tw__tweet_actions_enabled:I = 0x5
+
+.field public static final tw__TweetView_tw__tweet_id:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 399
+    const/4 v0, 0x2
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, Lcom/twitter/sdk/android/R$styleable;->AspectRatioFrameLayout:[I
+
+    .line 402
+    const/4 v0, 0x4
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_1
+
+    sput-object v0, Lcom/twitter/sdk/android/R$styleable;->ToggleImageButton:[I
+
+    .line 407
+    const/4 v0, 0x6
+
+    new-array v0, v0, [I
+
+    fill-array-data v0, :array_2
+
+    sput-object v0, Lcom/twitter/sdk/android/R$styleable;->tw__TweetView:[I
+
+    return-void
+
+    .line 399
+    nop
+
+    :array_0
+    .array-data 4
+        0x7f0100f5
+        0x7f0100f6
+    .end array-data
+
+    .line 402
+    :array_1
+    .array-data 4
+        0x7f0100f7
+        0x7f0100f8
+        0x7f0100f9
+        0x7f0100fa
+    .end array-data
+
+    .line 407
+    :array_2
+    .array-data 4
+        0x7f0100fb
+        0x7f0100fc
+        0x7f0100fd
+        0x7f0100fe
+        0x7f0100ff
+        0x7f010100
+    .end array-data
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 398
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

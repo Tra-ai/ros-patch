@@ -1,0 +1,16 @@
+netease_global_37    2.13.0
+admob_15    15.0.1(2)
+cc_live_2    1_1_11
+protocol    1.0.8
+netease_oversea_qrcode_2    1.6.0
+audience_network_2    5.7.0
+twitter    3.0.0(2)
+google_location_15    15.0.1(1)
+google_play_4    6(4)
+google_sc_15    15.0.1
+gmbridge_2    4.9.4
+unisdk_qrcode    1.0.3
+ngadvert    1.0(6)
+twitch    20180827
+facebook_sdk_new_sc_3    4.38.1(3)
+ad_appsflyer_5    5.2.0(1)

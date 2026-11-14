@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/netease_mpay__login_codescanner_root" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center_horizontal" android:id="@id/netease_mpay__scanner_codescanner_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="top" android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.netease.mpay.oversea.scan.widgets.TitleBarView android:id="@id/netease_mpay_oversea__codescanner_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/netease_mpay_oversea__codescanner_title_bar_height" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/netease_mpay_oversea__codescanner_viewfinder_container_height">
+            <View android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <RelativeLayout android:background="@drawable/netease_mpay_oversea_codescanner__scanner_rectangle_icon" android:layout_width="@dimen/netease_mpay_oversea__codescanner_viewfinder_height" android:layout_height="fill_parent">
+                <View android:id="@id/left" android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+                <View android:id="@id/right" android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="5.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+                <View android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_toLeftOf="@id/right" android:layout_toRightOf="@id/left" android:layout_alignParentTop="true" />
+                <View android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_toLeftOf="@id/right" android:layout_toRightOf="@id/left" android:layout_alignParentBottom="true" />
+                <com.netease.mpay.oversea.scan.widgets.QRFinderView android:id="@id/netease_mpay__scanner_codescanner_frame" android:layout_width="@dimen/netease_mpay_oversea__codescanner_viewfinder_height" android:layout_height="@dimen/netease_mpay_oversea__codescanner_viewfinder_height" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@color/netease_mpay_oversea__codescanner_background_color_black_transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textColor="@color/netease_mpay_oversea__codescanner_font_color_white" android:gravity="center" android:id="@id/netease_mpay__login_codescan_status_msg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/netease_mpay_oversea__codescanner_status_msg" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.netease.mpay.oversea.scan.widgets.ProgressView android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="@dimen/netease_mpay_oversea__codescanner_padding_45" android:layout_height="@dimen/netease_mpay_oversea__codescanner_padding_45" />
+</FrameLayout>

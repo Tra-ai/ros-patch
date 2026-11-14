@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">취소</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">로그인 확인</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">곧 %1$s에 로그인합니다.</string>
+    <string name="netease_mpay_oversea__codescanner_err">카메라를 열 수 없습니다. 재부팅 후 다시 시도해주세요.</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">로그인 확인</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">접속 에러가 발생했습니다. 네트워크 변경 혹은 잠시후 다시 시도해 주세요.</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">접속 에러가 발생했습니다. 기기 시스템 날자를 정확히 설정한 후 다시 시도해 주세요.! </string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">네트워크 오류입니다. 잠시후 다시 접속해 주세요.</string>
+    <string name="netease_mpay_oversea__codescanner_ok">확인</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">QR코드가 시간초과 되었습니다. </string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">카메라 접근 권한이 허용되지 않아 QR코드 스캔 기능이 실행되지 않습니다.</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">설정</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">카메라 접근 권한을 허용해주세요.</string>
+    <string name="netease_mpay_oversea__codescanner_scan">스캔하기 </string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">유효한 QR코드가 아닙니다. 올바른 게임 QR코드를 스캔해 주세요.</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">리퀘스트 파라미터 에러! </string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">다시 스캔해 주세요.</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">프레임 안에 QR코드를 스캔해 주세요. </string>
+</resources>
