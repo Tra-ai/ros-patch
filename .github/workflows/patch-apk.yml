@@ -31,7 +31,7 @@ jobs:
           gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" -p "RoS-Legacy-*.apk" -O ros.apk
 
       - name: Decompile
-        run: java -jar apktool.jar d ros.apk -o out
+        run: java -jar apktool.jar d ros.apk -o out --only-main-classes
 
       - name: Replace domains
         run: |
