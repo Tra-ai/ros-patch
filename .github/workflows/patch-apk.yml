@@ -1,0 +1,56 @@
+name: Patch APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag that holds the original APK"
+        default: "apk"
+      domain:
+        description: "New API domain"
+        default: "ros-api-swart.vercel.app"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Download tools and original APK
+        run: |
+          wget -q https://github.com/iBotPeaches/apktool/releases/download/v2.9.3/apktool_2.9.3.jar -O apktool.jar
+          wget -q https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar -O signer.jar
+          gh release download "${{ inputs.tag }}" -R "${{ github.repository }}" -p "RoS-Legacy-*.apk" -O ros.apk
+
+      - name: Decompile
+        run: java -jar apktool.jar d ros.apk -o out
+
+      - name: Replace domains
+        run: |
+          D="${{ inputs.domain }}"
+          FILES=$(grep -rlE "roslegacy\.net" out/smali* out/res out/assets --include=*.smali --include=*.xml --include=*.json --include=*.txt || true)
+          echo "Files patched:"; echo "$FILES"
+          [ -n "$FILES" ] && echo "$FILES" | xargs sed -i \
+            -e "s/api\.roslegacy\.net/$D/g" \
+            -e "s/login\.roslegacy\.net/$D/g" \
+            -e "s/cdn\.mobile\.roslegacy\.net/$D/g"
+          echo "Still containing roslegacy.net (binary files not patched):"
+          grep -rl "roslegacy.net" out || echo "none"
+
+      - name: Build and sign
+        run: |
+          java -jar apktool.jar b out -o new.apk
+          java -jar signer.jar --apks new.apk
+          ls -la *.apk
+          cp new-aligned-debugSigned.apk ros-patched.apk
+
+      - name: Upload to the release
+        run: gh release upload "${{ inputs.tag }}" ros-patched.apk --clobber -R "${{ github.repository }}"
