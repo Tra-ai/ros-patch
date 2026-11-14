@@ -1,0 +1,7 @@
+out/
+ros.apk
+apktool.jar
+signer.jar
+new.apk
+*.apk
+*.jar
