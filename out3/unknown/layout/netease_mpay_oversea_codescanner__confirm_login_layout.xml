@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <com.netease.mpay.oversea.scan.widgets.TitleBarView
+            android:id="@+id/netease_mpay_oversea__codescanner_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/netease_mpay_oversea__codescanner_title_bar_height"/>
+
+        <ImageView
+            android:layout_width="@dimen/netease_mpay_oversea__codescanner_confirm_icon_width"
+            android:layout_height="@dimen/netease_mpay_oversea__codescanner_confirm_icon_height"
+            android:layout_marginTop="@dimen/netease_mpay_oversea__codescanner_confirm_icon_top_margin"
+            android:src="@drawable/netease_mpay_oversea_codescanner__confirm_icon"/>
+
+        <TextView
+            android:id="@+id/netease_mpay_oversea__codescanner_confirm_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/netease_mpay_oversea__codescanner_confirm_msg_top_margin"
+            android:textSize="@dimen/netease_mpay_oversea__codescanner_confirm_msg_font_size"
+            android:textColor="@color/netease_mpay_oversea__codescanner_confirm_msg_font_color"
+            android:text="@string/netease_mpay_oversea__codescanner_confirm_tip"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/netease_mpay_oversea__codescanner_confirm_positive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/netease_mpay_oversea__codescanner_confirm_btn_height"
+            android:layout_marginLeft="@dimen/netease_mpay_oversea__codescanner_confrim_btn_horizontal_margin"
+            android:layout_marginRight="@dimen/netease_mpay_oversea__codescanner_confrim_btn_horizontal_margin"
+            android:background="@drawable/netease_mpay_oversea_codescanner__scanner_confirm_btn_selector"
+            android:textSize="@dimen/netease_mpay_oversea__codescanner_confirm_btn_font_size"
+            android:textColor="@color/netease_mpay_oversea__codescanner_confirm_btn_positive_color"
+            android:text="@string/netease_mpay_oversea__codescanner_login_confirm"/>
+
+        <TextView
+            android:id="@+id/netease_mpay_oversea__codescanner_confirm_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/netease_mpay_oversea__codescanner_confirm_btn_negative_top_margin"
+            android:layout_marginBottom="@dimen/netease_mpay_oversea__codescanner_confirm_btn_negative_bottom_margin"
+            android:text="@string/netease_mpay_oversea__codescanner_confirm_cancel"
+            android:textSize="@dimen/netease_mpay_oversea__codescanner_confirm_btn_font_size"
+            android:textColor="@color/netease_mpay_oversea__codescanner_confirm_btn_negative_color"/>
+
+    </LinearLayout>
+
+    <com.netease.mpay.oversea.scan.widgets.ProgressView
+        android:id="@+id/progress"
+        android:layout_width="@dimen/netease_mpay_oversea__codescanner_padding_45"
+        android:layout_height="@dimen/netease_mpay_oversea__codescanner_padding_45"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</FrameLayout>
+

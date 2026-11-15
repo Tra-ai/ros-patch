@@ -1,0 +1,249 @@
+<ppg3d>
+	<modules>
+		<module
+			Name		= 'Python'
+			File		= 'python.dll'
+		/>
+		<module
+			Name		= 'Collision'
+			File		= 'collision.dll'
+		/>
+	</modules>
+	<client
+		ResourceRoot		= '.\res'
+		LimitDisplayRate	= 'True'
+		FixedLogicRate		= 'False'
+		PCFixedLogicRate	= 'False'
+		ShowLogWindow		= 'True'
+		DumpType		= '0'
+		DumpPath		= 'dumps'
+		ShowDumpDlg		= 'False'
+		World			= 'mix'
+		WindowClientWidth	= '1280'
+		WindowClientHeight	= '720'
+		WindowAutoSize 		= 'True'
+		EnableMaxSize	='True'
+		MaxSoundCount		= '32'
+		WindowLimitcount		= '1'
+		>
+		<uis>
+			<cocosui Passing = 'False' />
+			<pygame Passing = 'True' />
+		</uis>
+	</client>
+	<filesystems>
+		<filesystem name='root'>
+			<loader name='discrete' opener='os' root='%DOC_DIR%' depth = '1'/>
+			<loader name='npk' opener='os' root='%DOC_DIR%' depth = '2'/>
+			<loader name='discrete' opener='os' root='%WORK_DIR%' depth = '1'/>
+			<loader name='npk' opener='os' root='%WORK_DIR%' depth = '2'/>
+		</filesystem>
+		<filesystem name='res'>
+			<loader name='discrete' opener='os' root='%DOC_DIR%\cloth_dlc\res' depth = '1'/>
+			<loader name='npk' opener='os' root='%DOC_DIR%\cloth_dlc\res' depth = '1'/>
+			<loader name='discrete' opener='os' root='%DOC_DIR%\res' depth = '1'/>
+			<loader name='npk' opener='os' root='%DOC_DIR%\res' depth = '1'/>
+			<loader name='discrete' opener='os' root='%WORK_DIR%\res' depth = '0'/>
+			<loader name='npk' opener='os' root='%WORK_DIR%\res' depth = '1'/>
+			<loader name='npk' opener='asset' root='res' depth = '1' />
+			<loader name='discrete' opener='obb' root='res' depth = '1' />
+			<loader name='npk' opener='obb' root='res' depth = '1' />
+			<loader name='discrete' opener='os' root='%DOC_DIR%\dlc_clothes\res' depth = '1'/>
+            <loader name='npk' opener='os' root='%DOC_DIR%\dlc_clothes\res' depth = '1'/>
+		</filesystem>
+		<filesystem name='script'>
+			<loader name='discrete' opener='os' root='%DOC_DIR%\script' depth = '0'/>
+			<loader name='npk' opener='os' root='%DOC_DIR%\script' depth = '0'/>
+			<loader name='discrete' opener='os' root='%WORK_DIR%\script' depth = '0'/>
+			<loader name='npk' opener='os' root='%WORK_DIR%\script' depth = '0'/>
+			<loader name='npk' opener='obb' root='script' depth = '0' />
+		</filesystem>
+	</filesystems>
+	<patch_cleaner Enable    = "True">
+		<platform_cleaner
+			platform 		= 	"ANDROID"
+			VersionKey		=	"CFBundleVersion"
+			VersionFile		=	"VersionRecord">
+
+			<file0 path 	= 	"Documents/assets.npk" />
+			<file1 path 	= 	"Documents/script.npk" />
+
+			<file2 path 	= 	"Documents/res/animators.npk" />
+			<file3 path 	= 	"Documents/res/character.npk" />
+			<file4 path 	= 	"Documents/res/common.npk" />
+			<file5 path 	= 	"Documents/res/effect.npk" />
+			<file6 path 	= 	"Documents/res/emote.npk" />
+			<file7 path 	= 	"Documents/res/entities.npk" />
+			<file8 path 	= 	"Documents/res/item.npk" />
+			<file9 path 	= 	"Documents/res/model.npk" />
+			<file10 path 	= 	"Documents/res/props.npk" />
+			<file11 path 	= 	"Documents/res/roads.npk" />
+			<file12 path 	= 	"Documents/res/scenario.npk" />
+			<file13 path 	= 	"Documents/res/scene.npk" />
+			<file14 path 	= 	"Documents/res/shader.npk" />
+			<file15 path 	= 	"Documents/res/textures.npk" />
+			<file16 path 	= 	"Documents/res/ui.npk" />
+			<file17 path 	= 	"Documents/res/vehicle.npk" />
+			<file18 path 	= 	"Documents/res/weapon.npk" />
+
+			<file19 path 	= 	"Documents/firstPackVersion" />
+			<file20 path 	= 	"Documents/patchVersion" />
+			<file21 path 	= 	"Documents/versionChange" />
+			<file22 path 	= 	"Documents/neox.xml" />
+			<file23 path 	= 	"Documents/res/character2.npk" />
+			<file24 path 	= 	"Documents/versionChange" />
+			<file25 path 	= 	"Documents/res/track.npk" />
+			<file26 path 	= 	"Documents/res/weather.npk" />
+			<file27 path 	= 	"Documents/res/decal.npk" />
+			<file28 path 	= 	"Documents/res/picked_image.npk" />
+			<file29 path 	= 	"Documents/remInstInfo" />
+		</platform_cleaner>
+		<platform_cleaner
+			platform 		= 	"IOS"
+			VersionKey		=	"CFBundleVersion"
+			VersionFile		=	"VersionRecord">
+
+			<file0 path 	= 	"assets.npk" />
+			<file1 path 	= 	"script.npk" />
+
+			<file2 path 	= 	"res/animators.npk" />
+			<file3 path 	= 	"res/character.npk" />
+			<file4 path 	= 	"res/common.npk" />
+			<file5 path 	= 	"res/effect.npk" />
+			<file6 path 	= 	"res/emote.npk" />
+			<file7 path 	= 	"res/entities.npk" />
+			<file8 path 	= 	"res/item.npk" />
+			<file9 path 	= 	"res/model.npk" />
+			<file10 path 	= 	"res/props.npk" />
+			<file11 path 	= 	"res/roads.npk" />
+			<file12 path 	= 	"res/scenario.npk" />
+			<file13 path 	= 	"res/scene.npk" />
+			<file14 path 	= 	"res/shader.npk" />
+			<file15 path 	= 	"res/textures.npk" />
+			<file16 path 	= 	"res/ui.npk" />
+			<file17 path 	= 	"res/vehicle.npk" />
+			<file18 path 	= 	"res/weapon.npk" />
+
+			<file19 path 	= 	"firstPackVersion" />
+			<file20 path 	= 	"patchVersion" />
+			<file21 path 	= 	"versionChange" />
+			<file22 path 	= 	"neox.xml" />
+			<file23 path 	= 	"res/character2.npk" />
+			<file24 path 	= 	"res/track.npk" />
+			<file25 path 	= 	"res/weather.npk" />
+			<file26 path 	= 	"res/decal.npk" />
+			<file27 path 	= 	"res/picked_image.npk" />
+		</platform_cleaner>
+	</patch_cleaner>
+	<bwclient
+		EnableBinaryXML	= 'False'
+		EnableMultiThread	= 'False'
+		EnableLazyImport	= 'False'
+		FileNameCaseSensitive	= 'False'
+		DefsRoot		= './'
+		ScriptRoot		= './script/entities/'
+		PersonalModule		= 'tps'
+		>
+	</bwclient>
+	<pygame MouseEventToTouch = 'True' />
+	<render
+		Depth			= '32'
+		MultiSample		= '0'
+		VSync			= 'False'
+		OneLightOptimize = 'True'
+		EnableShadowMap = 'True'
+		EnableDepthShadow = 'True'
+		DynamicDPBatching = 'False'
+		UseClassifiedVertexPool = 'False'
+		EnableBlendBuffer = 'True'
+		EnableRenderThread = 'False'
+		EnableRenderThreadV2 = 'True'
+		EnableThreadedGPURes = 'False'
+		MaxPointLight = '2'
+		TextureLOD = 'False'
+		DynamicResolutionRendering = 'True'
+		EffectCacheBehavior2 = '31'
+		D3D9Device = 'True'
+		>
+ 	 </render>
+  <meadow TerrainSubsystemEnable = 'True' />
+	<world
+		GpuSkinningEnable = 'False'
+		PixelDecal = 'True'
+		GpuParticle = 'False'
+		SubMeshBatching = 'True'
+		MergeStaticModel = 'True'
+		HardwareInstancing = 'True'
+		ShaderInstancing = 'False'
+		EnablePhysicsThread = 'False'
+		MergeTerrain = 'False'
+		EnableVegetation = 'True'
+		CrashOnInvalidGis = 'False'
+		MaxShaderInstancingBatchSize = '30'
+		MergeStaticShadowMap = 'False'
+		MergeDynamicModel = 'True'
+		UseHeightFieldTerrainShape = 'True'
+		AutoCutBones = 'True'
+		EnableOpenWorldLod = 'True'
+		EnableMultiThreadParticle = 'False'
+		UseMergedSfxTexture = 'True'
+		MergedSfxTextureConfig = 'effect\atlas\sfx_atlas_config.xml'
+		EnableAnimationThread = 'False'
+		UsePhysx = 'True'
+		EnableMergeAlpha ='False'
+		>
+	</world>
+	<python ThreadEnable  = 'True'>   </python>
+	<profiling
+		PerfSystem = 'True'
+		DebugPort = '7776'
+		>
+	</profiling>
+	<log
+		Level='1'
+		>
+	</log>
+	<cocosui
+		LogLevel = '30'
+		LoadSeparateAlphaFile = "True"
+		SharedTextureSize= '512'
+		EnableBatchOptimize = 'True'
+		EnableLabelUndoPrepare="True"
+		TtfFontCacheHotFrames="300"
+		>
+		<MergeSprite Enabled = "True">
+			<group
+				Name = "weapon_main_ui"
+				Regex = "ui/images/dts_item/icn_dts_.*"
+				Algorithm = "Lines_Generic"
+				TextureSize = "512"
+				PackingTextureLimit = "1"
+				>
+			</group>
+			<group
+				Name = "weapon_pick_ui"
+				Regex = "ui/images/dts_item/pick/.*"
+				Algorithm = "Lines_ForIcon"
+				TextureSize = "512"
+				PackingTextureLimit = "1"
+				>
+			</group>
+			<group
+				Name = "weapon_package_ui"
+				Regex = "ui/images/dts_item/package/.*"
+				Algorithm = "Lines_Generic"
+				TextureSize = "512"
+				PackingTextureLimit = "1"
+				>
+			</group>
+			<group
+				Name = "weapon_package_weapon"
+				Regex = "ui/images/equip_area/.*"
+				Algorithm = "Lines_Generic"
+				TextureSize = "512"
+				PackingTextureLimit = "1"
+				>
+			</group>
+		</MergeSprite>
+	</cocosui>
+</ppg3d>

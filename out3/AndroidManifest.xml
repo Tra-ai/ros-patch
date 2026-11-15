@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:installLocation="auto" package="net.roslegacy.prod" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:allowBackup="true" android:appCategory="game" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hasCode="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.netease.ntunisdk.application.NtSdkApplication">
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
+        <meta-data android:name="android.vendor.full_screen" android:value="true"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <meta-data android:name="android.resizeableActivity" android:value="true"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.netease.neox.Launcher" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="auth" android:scheme="rosmobile"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:label="h45na" android:name="com.netease.neox.Client" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen">
+            <meta-data android:name="android.app.lib_name" android:value="client"/>
+            <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.netease.neox.WelcomeView" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.netease.neox.MiraeLogin" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.netease.neox.VideoPlayer" android:screenOrientation="behind" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen"/>
+        <service android:name="com.netease.neox.ObbDownloaderService"/>
+        <receiver android:name="com.netease.neox.AlarmReceiver"/>
+        <receiver android:exported="false" android:name="com.netease.neox.RosUpdateReceiver"/>
+        <provider android:authorities="net.roslegacy.prod.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.netease.ntunisdk.base.deeplink.UniDeepLinkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="game.163.com" android:pathPrefix="/open/chiji/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="game.mobile" android:pathPrefix="/chiji" android:scheme="ntes"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="game.mobile" android:pathPrefix="/h45naxx1gb." android:scheme="ntes"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.netease.mpay.oversea.WEB_CLIENT_ID" android:value="130535410947-ri1bvha60q8ijtt4v51k4omv4g4ip0ab.apps.googleusercontent.com"/>
+        <meta-data android:name="com.netease.mpay.oversea.twitter.KEY" android:value="K9WHSfgBy5bX433ReDvWLGvmc"/>
+        <meta-data android:name="com.netease.mpay.oversea.twitter.SECRET" android:value="weNFIg3A0qyNMSU75NSH6ighJZEHQWfLiGJOdPsbBjCYhHwAUx"/>
+        <meta-data android:name="com.netease.mpay.oversea.wechat.KEY" android:value=""/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.netease.chiji.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.netease.mpay.oversea.MpayActivityStub" android:screenOrientation="behind" android:theme="@style/NeteaseMpay.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="mpsdk123"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:name="com.netease.mpay.oversea.thirdapi.DMMLoginActivity" android:screenOrientation="behind" android:theme="@style/NeteaseMpay.Transparent"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:name="com.netease.mpay.oversea.MpayActivity" android:screenOrientation="behind" android:theme="@style/NeteaseMpay.Transparent" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data android:name="android.support.VERSION" android:value="25.4.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.netease.mpay.oversea.scan.QrScannerActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="net.roslegacy.prod.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:theme="@style/MediaTheme"/>
+        <activity android:name="com.twitter.sdk.android.tweetui.GalleryActivity" android:theme="@style/MediaTheme"/>
+        <activity android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/google_sc_app_id"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:name="com.netease.unisdk.gmbridge5.activity.GMWebviewActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:hardwareAccelerated="true" android:name="com.netease.unisdk.gmbridge5.activity.GMWebviewActivityEx" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="net.roslegacy.prod.gmbridge.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.netease.unisdk.gmbridge5.provider.GmFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gm_provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.netease.ntunisdk.zxing.client.android.CaptureActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize" android:name="com.netease.ntunisdk.NtTwitchAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider165387204058528" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <provider android:authorities="net.roslegacy.prod.fb.fileprovider" android:enabled="true" android:exported="false" android:grantUriPermissions="true" android:name="com.netease.ntunisdk.UniFacebookFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_fb_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:authorities="net.roslegacy.prod.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <queries>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.android.vending"/>
+    </queries>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+</manifest>

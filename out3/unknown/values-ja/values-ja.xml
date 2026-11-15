@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">いいえ</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">ログイン</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">まもなくPCで%1$sにログイン</string>
+    <string name="netease_mpay_oversea__codescanner_err">カメラ起動失敗、携帯を再起動してください！</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">ログイン</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">アクセスエラー、ネットの切替えまたは再試行をしてください</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">アクセスエラー、本デバイスのシステム日時を正確に設定してから再試行してください</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">ネット混雑、後程再試行してください</string>
+    <string name="netease_mpay_oversea__codescanner_ok">はい</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">QRコード期限切れ</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">アクセス許可がされていないとスキャンできません。</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">セッティング</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">カメラへのアクセスを許可してください。</string>
+    <string name="netease_mpay_oversea__codescanner_scan">スキャン</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">有効なQRコードではありません、ゲームのQRコードをスキャンしてください</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">リクエストパラメータエラー！</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">再スキャン</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">枠をQRコードに合わせると自動でスキャンできます</string>
+</resources>

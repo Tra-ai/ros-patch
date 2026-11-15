@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <color android:color="@color/netease_mpay_oversea__codescanner_confirm_btn_background_pressed"/>
+    </item>
+    <item>
+        <color android:color="@color/netease_mpay_oversea__codescanner_confirm_btn_background_normal"/>
+    </item>
+</selector>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">取消</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">登入確認</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">即將在電腦上登入%1$s</string>
+    <string name="netease_mpay_oversea__codescanner_err">打開相機失敗，請重啟手機後再試！</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">確認登入</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">訪問出錯，請嘗試切換網路，或稍候再試！</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">訪問出錯，請正確設置本機系統日期時間後重試！</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">網路繁忙，請稍候重試</string>
+    <string name="netease_mpay_oversea__codescanner_ok">確定</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">QR Code已過期</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">掃碼功能無法啟動，因缺少必要的照相機權限。</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">去設置</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">請授予訪問照相機的權限。</string>
+    <string name="netease_mpay_oversea__codescanner_scan">掃描</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">沒有掃描到有效QR Code，請掃描遊戲的QR Code</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">請求參數錯誤！</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">重新掃描</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">將QR Code放進框內，即可自動掃描</string>
+</resources>

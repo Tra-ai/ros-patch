@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">Cancelar</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">Confirmación de inicio de sesión</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">Confirma tu inicio de sesión en %1$s</string>
+    <string name="netease_mpay_oversea__codescanner_err">No se pudo abrir la cámara. Reinicia el teléfono e inténtalo de nuevo.</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">Confirmar inicio de sesión</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">Error de acceso. Cambia de red e inténtalo de nuevo.</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">Error de acceso. Establece la fecha correcta en el sistema e inténtalo de nuevo.</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">El servicio está ocupado. Inténtalo de nuevo más tarde.</string>
+    <string name="netease_mpay_oversea__codescanner_ok">Confirmar</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">Código QR caducado</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">No se puede activar la función de escanear código sin los permisos de cámara.</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">Opciones</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">Por favor, activa los permisos de cámara.</string>
+    <string name="netease_mpay_oversea__codescanner_scan">Escanear</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">Código QR no válido. Escanea el código QR correcto.</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">¡Error de parámetro de solicitud!</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">Escanear de nuevo</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">Ajusta el código QR dentro del marco para escanearlo</string>
+</resources>

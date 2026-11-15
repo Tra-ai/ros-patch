@@ -1,0 +1,83 @@
+version: 2.9.3
+apkFileName: ros-current.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 16
+  targetSdkVersion: 29
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 1129767
+  versionName: 1.610382.519384
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: 0
+  play-services-ads-base.properties: 8
+  play-services-ads-identifier.properties: 8
+  play-services-ads-lite.properties: 8
+  play-services-ads.properties: 8
+  play-services-auth-api-phone.properties: 8
+  play-services-auth-base.properties: 8
+  play-services-auth.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-clearcut.properties: 8
+  play-services-drive.properties: 8
+  play-services-games.properties: 8
+  play-services-phenotype.properties: 8
+  play-services-safetynet.properties: 8
+  play-services-tasks.properties: 8
+  ReadMe_UniSDK.txt: 8
+  com/android/vending/billing/IInAppBillingService.aidl: 8
+  com/appsflyer/internal/a: 8
+  com/appsflyer/internal/b: 8
+  drawable/netease_mpay_oversea_codescanner__alert_dialog_background.xml: 8
+  drawable/netease_mpay_oversea_codescanner__confirm_back_background.xml: 8
+  drawable/netease_mpay_oversea_codescanner__confirm_icon.png: 0
+  drawable/netease_mpay_oversea_codescanner__confirm_titlbar_background.xml: 8
+  drawable/netease_mpay_oversea_codescanner__ic_back.png: 0
+  drawable/netease_mpay_oversea_codescanner__ic_back_black.png: 0
+  drawable/netease_mpay_oversea_codescanner__scanner_back_background.xml: 8
+  drawable/netease_mpay_oversea_codescanner__scanner_confirm_btn_selector.xml: 8
+  drawable/netease_mpay_oversea_codescanner__scanner_line_icon.png: 0
+  drawable/netease_mpay_oversea_codescanner__scanner_rectangle_icon.png: 0
+  drawable/netease_mpay_oversea_codescanner__title_bar_back.xml: 8
+  layout/netease_mpay_oversea_codescanner__alert_dialog.xml: 8
+  layout/netease_mpay_oversea_codescanner__confirm_login_layout.xml: 8
+  layout/netease_mpay_oversea_codescanner__scanner_layout.xml: 8
+  layout/netease_mpay_oversea_codescanner__title_bar.xml: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 0
+  org/apache/http/entity/mime/version.properties: 8
+  values/values.xml: 8
+  values-de/values-de.xml: 8
+  values-en/values-en.xml: 8
+  values-es/values-es.xml: 8
+  values-ja/values-ja.xml: 8
+  values-ko/values-ko.xml: 8
+  values-large-v4/values-large-v4.xml: 8
+  values-pt/values-pt.xml: 8
+  values-ru/values-ru.xml: 8
+  values-th/values-th.xml: 8
+  values-xlarge-v4/values-xlarge-v4.xml: 8
+  values-zh-rCN/values-zh-rCN.xml: 8
+  values-zh-rHK/values-zh-rHK.xml: 8
+  values-zh-rTW/values-zh-rTW.xml: 8
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- ogg
+- assets/common_data
+- assets/ntunisdk_config
+- assets/unisdk_qrcode_data
+- assets/ntunisdk.cfg
+- assets/res/version
+- assets/res/md5_list
+- mp3

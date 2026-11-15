@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">ยกเลิก</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">ยืนยันการเข้าสู่ระบบแล้ว</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">ยืนยันการเข้าสู่ระบบ %1$s ของคุณ</string>
+    <string name="netease_mpay_oversea__codescanner_err">ไม่สามารถเปิดกล้องได้ โปรดรีสตาร์ตโทรศัพท์และลองอีกครั้ง!</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">ยืนยันการเข้าสู่ระบบ</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">ข้อผิดพลาดการเข้าถึง สลับเครือข่ายและลองอีกครั้ง</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">ข้อผิดพลาดการเข้าถึง โปรดตั้งค่าวันที่ที่ถูกต้องบนระบบและลองอีกครั้ง!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">บริการไม่ว่าง โปรดลองอีกครั้งในภายหลัง</string>
+    <string name="netease_mpay_oversea__codescanner_ok">ยืนยัน</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">รหัส QR ล้าสมัย</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">เปิดใช้การสแกนQRโค้ดไม่ได้ เพราะไม่สามารถเข้าใช้งานกล้องได้</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">ตั้งค่า</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">กรุณาอนุมัติสิทธิ์การเข้าใช้งานกล้อง</string>
+    <string name="netease_mpay_oversea__codescanner_scan">สแกน</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">รหัส QR ไม่ถูกต้อง โปรดสแกนรหัส QR ที่ถูกต้อง</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">ข้อผิดพลาดพารามิเตอร์คำขอ!</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">สแกนอีกครั้ง</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">จัดรหัส QR ให้อยู่ในกรอบเพื่อสแกน</string>
+</resources>

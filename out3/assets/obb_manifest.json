@@ -1,0 +1,121 @@
+{
+  "main": {
+    "entries": {
+      "assets.npk": {
+        "sha256": "dd45ae55106961ecbf95b295e91a7e04c2d632d172afc3410d91b368d99c8e0e",
+        "size": 11128044
+      },
+      "res/animators.npk": {
+        "sha256": "f9c49c51acdfff6531497cda11581a2ce1b02857d293b8016ea669bec260f25c",
+        "size": 157652
+      },
+      "res/character.npk": {
+        "sha256": "318328c29a10dc95a3bb66d1b3eb58efd02f8211d55ff9dd734136a84c2bda9f",
+        "size": 738015492
+      },
+      "res/character2.npk": {
+        "sha256": "b53a12251ae9061888e919f2d328498e1da0d8f21630842af3d68a165892d701",
+        "size": 527059820
+      },
+      "res/common.npk": {
+        "sha256": "8bdd40f08404745e3d54684d73beaf931a11fbc9334960a59770f8eeffd6a487",
+        "size": 2333016
+      },
+      "res/cubemap.npk": {
+        "sha256": "42e8f70fe70f57514455207cde82e8ca6d0a864598fcc79f658704654d051b65",
+        "size": 131672
+      },
+      "res/decal.npk": {
+        "sha256": "9933030dc7b569692c6cb4083d7a8a91297050f9125c34f594d53f0c5b3f84c8",
+        "size": 89448
+      },
+      "res/effect.npk": {
+        "sha256": "a3528ddf7b54d41bb487b55cd3d858f04aa15ffccc5881068018bbda7c350fd3",
+        "size": 638168700
+      },
+      "res/effect_cache.npk": {
+        "sha256": "ddcd4fbc0ac3b3ab0cdd4e2dbf8218474fd7708b4641800d8c96915cfd4894b2",
+        "size": 6465868
+      },
+      "res/emote.npk": {
+        "sha256": "fc6e74f9df64a49d1ca42e81e49579a354e1bbb5010dd23886f22491db334fe6",
+        "size": 2911704
+      },
+      "res/entities.npk": {
+        "sha256": "e6fe9c1760532051599aeac375a4e3f5b22c58af8100446df1eb274b10a0eccb",
+        "size": 340124
+      },
+      "res/pet.npk": {
+        "sha256": "fa844838211d891bc3239894b38a1d4d5edd6377386f5de19ab3ac7c3da7aaec",
+        "size": 5286568
+      },
+      "res/props.npk": {
+        "sha256": "5a8e892d080d93d35d8545e5a7626cc8d9671d3fdd5f9aedc3d0c7bd80ebbbf4",
+        "size": 47908
+      },
+      "res/roads.npk": {
+        "sha256": "2650e4d4ca4624aafe85899699133870ca9852428a6ea564320807aa9f238e12",
+        "size": 63832
+      },
+      "res/scenario.npk": {
+        "sha256": "76fcc1bf02aebf1918e82f163ea8c62f7bc07a88d187268440f9ff701cba548b",
+        "size": 14396
+      },
+      "res/shader.npk": {
+        "sha256": "fcb2ece2def677b137527836a8d7602b8e47fa009eb45cb5dda0def508a038e1",
+        "size": 1726744
+      },
+      "res/textures.npk": {
+        "sha256": "956a5918e61a5d7d6c663044d429f44b3d95a9319176cd35849fc9f6325cbdc6",
+        "size": 2055888
+      },
+      "res/track.npk": {
+        "sha256": "f068f00b569480ec4046479dd1545c6ec080f4d695557ce0b32f74e854f2e531",
+        "size": 1226300
+      },
+      "res/weather.npk": {
+        "sha256": "acb79805e0be3f19303ad7a1897422fec9df577b67efa3ed9b6191df4ff0ac74",
+        "size": 7683248
+      },
+      "script.npk": {
+        "sha256": "9739d50f445f10bdb87aae338adf72cc96a51de8e0b677e615fc27d79d79750c",
+        "size": 51787116
+      }
+    },
+    "file_md5": "f6c27c1617ed4c25bdd03625131d9a3a",
+    "file_size": 2034576636,
+    "npk_count": 20
+  },
+  "patch": {
+    "entries": {
+      "res/item.npk": {
+        "sha256": "638b56682af4c5a818e32fa842d77bcb38e1897004d0f6f6c73f190725b5fbbe",
+        "size": 127020464
+      },
+      "res/model.npk": {
+        "sha256": "b45de80b01f5b086a5d47ba30c2d93f0eedc2fb21195ef17bd46341b5ab34a8b",
+        "size": 136728524
+      },
+      "res/scene.npk": {
+        "sha256": "78efea91bc68688a971a3dd208fce55a3c408808b100264dc1a2e5199ca35ee6",
+        "size": 227804832
+      },
+      "res/ui.npk": {
+        "sha256": "c1d65a1f8e31a41312dc1fa81e5fb4d2e22c336e303edc166744a7c6bb662a70",
+        "size": 501884222
+      },
+      "res/vehicle.npk": {
+        "sha256": "986a888d4e6b145cb851b57d423402ee90567827e4df8ca91656dd3c97fa3f89",
+        "size": 332899220
+      },
+      "res/weapon.npk": {
+        "sha256": "c54175fa2cda305b1c7ab74426405380182c1c4bfebf3f01e0975d1537c839a4",
+        "size": 190895476
+      }
+    },
+    "file_md5": "d80855dc8ac3c2d7a9d790c9dbd49afd",
+    "file_size": 1667598091,
+    "npk_count": 6
+  },
+  "version": 1
+}

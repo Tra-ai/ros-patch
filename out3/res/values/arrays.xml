@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trident_modules">
+        <item>trident_lineAuthAdapter</item>
+        <item>trident_graph</item>
+    </string-array>
+    <string-array name="uni_gm_img_pick_dlg_items">
+        <item>Album</item>
+        <item>Camera</item>
+    </string-array>
+</resources>

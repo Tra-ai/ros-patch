@@ -1,0 +1,83 @@
+name: Patch DLC sizes
+
+on:
+  workflow_dispatch:
+    inputs:
+      src_tag:
+        description: "Release tag holding the current patched APK"
+        default: "apk"
+      src_asset:
+        description: "Asset name of the current patched APK"
+        default: "ros-patched.apk"
+      dst_tag:
+        description: "Release tag to upload the new APK to"
+        default: "apk"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Download tools and current patched APK
+        run: |
+          wget -q https://github.com/iBotPeaches/apktool/releases/download/v2.9.3/apktool_2.9.3.jar -O apktool.jar
+          wget -q https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar -O signer.jar
+          gh release download "${{ inputs.src_tag }}" -R "${{ github.repository }}" -p "${{ inputs.src_asset }}" -O ros.apk
+
+      - name: Decompile
+        run: java -jar apktool.jar d --only-main-classes ros.apk -o out
+
+      - name: Patch DlcDownloader sizes/sha to a 1-byte placeholder
+        run: |
+          python3 - <<'PYEOF'
+          p = "out/smali/com/netease/neox/DlcDownloader.smali"
+          s = open(p).read()
+
+          old_sizes = """    :array_0
+              .array-data 8
+                  0x1d726530
+                  0x649aadf
+              .end array-data"""
+          new_sizes = """    :array_0
+              .array-data 8
+                  0x1
+                  0x1
+              .end array-data"""
+          assert old_sizes in s, "size array not found"
+          s = s.replace(old_sizes, new_sizes, 1)
+
+          old_sha = '''    const-string v2, "b1cdb4d1fad7db16399b7db0ce99ec8cbda092093f7214d92a98c9a346339331"
+
+              aput-object v2, v1, v3
+
+              const-string v2, "dd557dfe4b83576563e7a7911781ee227ae4c944d4a536f8659f69d38ebb9efe"'''
+          new_sha = '''    const-string v2, "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+
+              aput-object v2, v1, v3
+
+              const-string v2, "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"'''
+          assert old_sha in s, "sha strings not found"
+          s = s.replace(old_sha, new_sha, 1)
+
+          open(p, "w").write(s)
+          print("patched ok")
+          PYEOF
+
+      - name: Build and sign
+        run: |
+          java -jar apktool.jar b out -o new.apk
+          java -jar signer.jar --apks new.apk
+          ls -la *.apk
+          cp new-aligned-debugSigned.apk ros-patched-dlc.apk
+
+      - name: Upload to the release
+        run: gh release upload "${{ inputs.dst_tag }}" ros-patched-dlc.apk --clobber -R "${{ github.repository }}"

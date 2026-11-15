@@ -1,0 +1,32 @@
+.class public final Lcom/facebook/ads/redexgen/X/F6;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/facebook/ads/redexgen/X/F7;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 24353
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A4K(Lcom/facebook/ads/redexgen/X/7h;Lcom/facebook/ads/redexgen/X/Gz;Ljava/util/concurrent/Executor;)Lcom/facebook/ads/redexgen/X/F8;
+    .locals 1
+
+    .prologue
+    .line 24354
+    new-instance v0, Lcom/facebook/ads/redexgen/X/Ez;
+
+    invoke-direct {v0, p1, p2, p3}, Lcom/facebook/ads/redexgen/X/Ez;-><init>(Lcom/facebook/ads/redexgen/X/7h;Lcom/facebook/ads/redexgen/X/Gz;Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method

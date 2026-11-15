@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">Cancelar</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">Login confirmado</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">Confirmar o seu login para %1$s</string>
+    <string name="netease_mpay_oversea__codescanner_err">Falha ao ligar a câmera, reinicie o dispositivo e tente novamente!</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">Confirmar Login</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">Erro de acesso. Troque a rede e tente novamente!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">Erro de acesso. Configure a data correta do sistema e tente novamente!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">Serviço ocupado, tente novamente mais tarde.</string>
+    <string name="netease_mpay_oversea__codescanner_ok">Confirmar</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">Código QR vencido</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">A função de escaneamento de código não pode ser usada sem permissão da câmera.</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">Definições</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">Por favor, ative a permissão da câmera.</string>
+    <string name="netease_mpay_oversea__codescanner_scan">Escanear</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">Código QR inválido, escaneie Código QR correto</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">Erro de parâmetro de solicitação!</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">Escanear novamente</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">Alinhe o código QR no quadro para escanear</string>
+</resources>

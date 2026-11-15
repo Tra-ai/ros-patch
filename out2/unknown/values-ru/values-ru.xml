@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="netease_mpay_oversea__codescanner_confirm_cancel">Отмена</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_login">Подтверждение входа</string>
+    <string name="netease_mpay_oversea__codescanner_confirm_tip">Подтвердите вход в %1$s</string>
+    <string name="netease_mpay_oversea__codescanner_err">Не удалось открыть камеру. Перезагрузите телефон и повторите попытку!</string>
+    <string name="netease_mpay_oversea__codescanner_login_confirm">Подтвердить вход</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate">Ошибка доступа. Подключитесь к другой сети и повторите попытку!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_no_perr_certificate_date_error">Ошибка доступа. Настройте правильную дату в устройстве и повторите попытку!</string>
+    <string name="netease_mpay_oversea__codescanner_network_err_others">Служба перегружена. Повторите попытку позже.</string>
+    <string name="netease_mpay_oversea__codescanner_ok">Подтвердить</string>
+    <string name="netease_mpay_oversea__codescanner_outdated_qrcode">Устаревший QR-код</string>
+    <string name="netease_mpay_oversea__codescanner_permission_deny">Сканирование не может быть выполнено ввиду отсутствия необходимых разрешений.</string>
+    <string name="netease_mpay_oversea__codescanner_permission_go_setting">Настройки</string>
+    <string name="netease_mpay_oversea__codescanner_permission_unrationable">Разрешите доступ к камере.</string>
+    <string name="netease_mpay_oversea__codescanner_scan">Сканировать</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error">Недопустимый QR-код. Отсканируйте правильный QR-код.</string>
+    <string name="netease_mpay_oversea__codescanner_scan_error_illegal_param">Ошибка запроса параметра!</string>
+    <string name="netease_mpay_oversea__codescanner_scan_repeat">Сканировать заново</string>
+    <string name="netease_mpay_oversea__codescanner_status_msg">Поместите QR-код в рамку, чтобы его отсканировать</string>
+</resources>
